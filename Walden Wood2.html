@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walden Wood Eco Retreat | Private residences in the forest</title>
+<meta name="description" content="Eleven private residences in forty-two acres of forest. Reserve directly with Walden Wood Eco Retreat.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+:root{--stone:#efede7;--mist:#dcdfd7;--spruce:#0d2c29;--moss:#1c4943;--brass:#b3945b;--brass2:#d3b97f;--ink:#15201f;
+--bs-body-font-family:'Hanken Grotesk',sans-serif;--bs-body-color:var(--ink);--bs-body-bg:var(--stone)}
+html{scroll-behavior:smooth}body{font-weight:400;line-height:1.7;font-size:1.02rem}
+h1,h2,h3,h4,.serif{font-family:'Instrument Serif',serif;font-weight:400;color:inherit;letter-spacing:-.01em}
+h2{font-size:clamp(2.2rem,4.8vw,3.9rem);line-height:1.04}
+a{color:inherit}.muted{color:#5b6764}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.btn{border-radius:0;font-weight:500;letter-spacing:.03em;padding:.8rem 1.9rem;border-width:1px}
+.btn-brass{background:var(--brass);border-color:var(--brass);color:#10201e}.btn-brass:hover{background:var(--brass2);border-color:var(--brass2);color:#10201e}
+.btn-ghost{border-color:currentColor;color:inherit;background:transparent}.btn-ghost:hover{background:var(--brass);border-color:var(--brass);color:#10201e}
+.lnk{border-bottom:1px solid var(--brass);text-decoration:none;padding-bottom:2px;font-weight:500;background:none;border-top:0;border-inline:0;color:inherit}.lnk:hover{color:var(--brass)}
+/* nav */
+.navbar{padding:1.5rem 0;transition:background .4s,padding .4s}.navbar.solid{background:rgba(13,44,41,.96);padding:.8rem 0;backdrop-filter:blur(8px)}
+.brand{font-family:'Instrument Serif';font-size:1.8rem;color:#fff;text-decoration:none;line-height:1}.brand small{font:300 .72rem 'Hanken Grotesk';letter-spacing:.14em;margin-left:.6rem;opacity:.75}
+.nav-link{color:#fff!important;font-weight:400;font-size:.95rem;opacity:.85}.nav-link:hover{opacity:1;color:var(--brass2)!important}
+.navbar-toggler{border:1px solid rgba(255,255,255,.5)}.navbar-toggler-icon{filter:invert(1)}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;background:var(--spruce);color:#fff;overflow:hidden;display:flex;align-items:flex-end}
+.hero .art{position:absolute;inset:0;width:100%;height:100%;background:linear-gradient(rgba(7,24,22,.08),rgba(7,24,22,.48)),var(--hero-img) center/cover no-repeat;animation:drift 28s ease-out forwards}
+@keyframes drift{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,24,22,.45),rgba(7,24,22,0) 35%,rgba(7,24,22,.75));z-index:1}
+.grain{position:absolute;inset:0;z-index:1;opacity:.22;mix-blend-mode:overlay;pointer-events:none}
+.hero .in{position:relative;z-index:2;width:100%;padding-bottom:3rem}
+.hero h1{font-size:clamp(3.4rem,10vw,9rem);line-height:.9;letter-spacing:-.03em;max-width:12ch;animation:rise 1.4s .2s cubic-bezier(.2,.7,.2,1) both}
+.hero p.sub{max-width:27rem;font-weight:300;font-size:1.15rem;animation:rise 1.4s .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.bar{margin-top:3.2rem;border-top:1px solid rgba(255,255,255,.35);padding-top:1.4rem;animation:rise 1.4s .8s cubic-bezier(.2,.7,.2,1) both}
+.bar label{font-size:.74rem;letter-spacing:.12em;color:var(--brass2);display:block;margin-bottom:.1rem}
+.bar .form-control,.bar .form-select{background-color:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.4);border-radius:0;color:#fff;padding:.3rem 0;color-scheme:dark;font-weight:300}
+.bar .form-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='1.5' d='m2 5 6 6 6-6'/%3E%3C/svg%3E")}
+.bar option{color:#111}.bar .form-control:focus,.bar .form-select:focus{box-shadow:none;border-color:var(--brass2)}
+/* sections */
+.sec{padding:8rem 0}
+.rule{border-top:1px solid rgba(21,32,31,.22)}
+.stat b{font:400 3rem/1 'Instrument Serif';display:block}.stat span{font-size:.9rem}
+.res{display:grid;grid-template-columns:repeat(12,1fr);gap:2rem;align-items:center;margin-bottom:7rem}
+.res .pic{grid-column:1/8;aspect-ratio:4/3;position:relative;overflow:hidden;background:var(--g)}
+.res .tx{grid-column:9/13}.res:nth-child(even) .pic{grid-column:6/13;grid-row:1}.res:nth-child(even) .tx{grid-column:1/5}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.pic .grain{opacity:.28}
+.res h3{font-size:clamp(2rem,3.4vw,3rem);margin-bottom:.6rem}
+.res .from{font-size:.9rem}.res .from b{font:400 1.9rem 'Instrument Serif'}
+.res ul{list-style:none;padding:0;margin:1rem 0 1.6rem;font-size:.92rem;color:#4a5754}.res li{padding:.35rem 0;border-top:1px solid rgba(21,32,31,.14)}.res li:last-child{border-bottom:1px solid rgba(21,32,31,.14)}
+@media(max-width:991px){.res .pic,.res:nth-child(even) .pic{grid-column:1/-1;grid-row:1}.res .tx,.res:nth-child(even) .tx{grid-column:1/-1}.res{margin-bottom:4.5rem}.sec{padding:5rem 0}}
+.xr{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;padding:2rem 0;border-top:1px solid rgba(255,255,255,.2);transition:padding .4s}
+.xr:last-child{border-bottom:1px solid rgba(255,255,255,.2)}.xr h3{font-size:clamp(1.8rem,3vw,2.5rem);margin:0;transition:color .3s}.xr:hover h3{color:var(--brass2)}.xr p{margin:0;color:#c3cfca;font-weight:300}
+@media(max-width:767px){.xr{grid-template-columns:1fr;gap:.6rem}}
+.dark{background:var(--spruce);color:#e7ede9}.dark h2{color:#fff}
+.fig b{font:400 clamp(3.4rem,6vw,5.4rem)/1 'Instrument Serif';color:var(--brass2);display:block}.fig{border-top:1px solid rgba(255,255,255,.25);padding-top:1rem}
+.offer{border:1px solid var(--brass);padding:2.4rem;height:100%}.offer h3{font-size:2.2rem}
+.code{display:inline-flex;align-items:center;gap:1rem;border:1px solid rgba(21,32,31,.35);padding:.35rem .4rem .35rem 1rem;letter-spacing:.14em;font-weight:500;font-size:.9rem}
+.code button{background:var(--spruce);color:#fff;border:0;font-size:.78rem;padding:.3rem .8rem;letter-spacing:.04em}
+.quote{font:italic 400 clamp(1.8rem,4vw,3.1rem)/1.2 'Instrument Serif';max-width:52rem}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:210px;gap:1.2rem}
+.gallery-grid figure{margin:0;overflow:hidden;background:var(--mist)}
+.gallery-grid figure:nth-child(1){grid-column:span 7;grid-row:span 2}
+.gallery-grid figure:nth-child(2){grid-column:span 5}
+.gallery-grid figure:nth-child(3){grid-column:span 5}
+.gallery-grid figure:nth-child(4){grid-column:span 4}
+.gallery-grid figure:nth-child(5){grid-column:span 4}
+.gallery-grid figure:nth-child(6){grid-column:span 4}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s ease}
+.gallery-grid figure:hover img{transform:scale(1.025)}
+@media(max-width:767px){.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gallery-grid figure:nth-child(n){grid-column:span 1;grid-row:span 1}.gallery-grid figure:nth-child(1){grid-column:span 2}}
+.carousel-indicators [data-bs-target]{background:var(--spruce);width:28px;height:2px;border:0}
+.contact .form-control{background:transparent;border:0;border-bottom:1px solid rgba(21,32,31,.4);border-radius:0;padding:.7rem 0}.contact .form-control:focus{box-shadow:none;border-color:var(--spruce)}
+footer{background:var(--spruce);color:#a9bab4;padding:3rem 0 2rem;font-size:.9rem}
+.est td{padding:.35rem 0;font-size:.95rem}.est tr.t td{border-top:1px solid rgba(21,32,31,.3);font:400 1.6rem 'Instrument Serif';padding-top:.6rem}
+.modal-content{border-radius:0;border:0;border-top:3px solid var(--brass);background:var(--stone)}
+.modal .form-control{border-radius:0;border-color:rgba(21,32,31,.3);background:transparent}
+.wa{position:fixed;right:1.2rem;bottom:1.2rem;z-index:20;opacity:0;pointer-events:none;transition:opacity .3s}body.scrolled .wa{opacity:1;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+@media(max-width:991px){.navbar-collapse{background:var(--spruce);padding:1rem 1.2rem;margin-top:.8rem}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .9 0"/></filter></svg>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="nav"><div class="container">
+ <a class="brand" href="#top">Walden Wood<small>Eco Retreat</small></a>
+ <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+ <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+  <li class="nav-item"><a class="nav-link" href="#residences">Residences</a></li><li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>  <li class="nav-item"><a class="nav-link" href="#stewardship">Stewardship</a></li><li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li><li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li><li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+  <li class="nav-item"><button class="btn btn-ghost btn-sm text-white" data-open-book>Reserve</button></li></ul></div>
+</div></nav>
+
+<header class="hero" id="top">
+ <div class="art" style="--hero-img:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2000&q=90')" aria-hidden="true"></div>
+ <svg class="grain" width="100%" height="100%"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+ <div class="container in">
+  <h1>Quiet, by design.</h1>
+  <p class="sub mt-4 mb-0">Eleven private residences set in forty-two acres of Odisha forest, beside a stream that never stops talking.</p>
+  <form class="bar" id="barForm" novalidate><div class="row g-4 align-items-end">
+   <div class="col-6 col-lg"><label for="ci">Arrival</label><input class="form-control" type="date" id="ci" required></div>
+   <div class="col-6 col-lg"><label for="co">Departure</label><input class="form-control" type="date" id="co" required></div>
+   <div class="col-6 col-lg"><label for="gs">Guests</label><select class="form-select" id="gs"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option></select></div>
+   <div class="col-6 col-lg"><label for="rm">Residence</label><select class="form-select" id="rm"></select></div>
+   <div class="col-12 col-lg-auto"><button class="btn btn-brass w-100" type="submit">Check price</button></div></div></form>
+ </div>
+</header>
+
+<section class="sec"><div class="container"><div class="row g-5">
+ <div class="col-lg-7"><h2>We built less, so the forest could stay.</h2></div>
+ <div class="col-lg-4 offset-lg-1"><p class="muted">Every residence is raised on piers to leave the roots untouched, built from reclaimed timber, and powered by the sun. Dinner comes from our own farm. There are no televisions, and the wifi is kept to the lounge.</p>
+  <div class="row mt-5 g-4"><div class="col-4 stat rule pt-3"><b>11</b><span>residences</span></div><div class="col-4 stat rule pt-3"><b>42</b><span>acres</span></div><div class="col-4 stat rule pt-3"><b>1</b><span>stream</span></div></div></div>
+</div></div></section>
+
+<section class="pb-5" id="residences"><div class="container">
+ <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 gap-3"><h2 class="mb-0">The residences</h2><p class="muted mb-0">Weekend nights carry a 20% supplement.</p></div>
+ <div id="rooms"></div>
+</div></section>
+
+<section class="sec dark" id="experiences"><div class="container">
+ <div class="row mb-5"><div class="col-lg-7"><h2>Days with nothing to prove</h2></div></div>
+ <div class="xr"><h3>Forest walk at first light</h3><p>A resident naturalist leads a ninety-minute loop past the stream and the old sal grove. Tea and binoculars are provided. Included with every stay.</p></div>
+ <div class="xr"><h3>Dinner from the farm</h3><p>Vegetables picked that afternoon and cooked over wood fire at a single long table. The menu follows the harvest.</p></div>
+ <div class="xr"><h3>Stream-side yoga</h3><p>Sunrise and sunset sessions on the bamboo deck, for every level. Private sessions can be arranged.</p></div>
+ <div class="xr"><h3>The stargazing deck</h3><p>Lights go low after nine so the sky can take over. A telescope and a short guided session on clear nights.</p></div>
+</div></section>
+
+<section class="sec" id="stewardship"><div class="container"><div class="row g-5 align-items-end">
+ <div class="col-lg-5"><h2>Looking after the land</h2><p class="muted mt-3">We measure what we use and publish it every year, so you can see what a stay costs the forest.</p></div>
+ <div class="col-lg-7"><div class="row g-4">
+  <div class="col-sm-4"><div class="fig" style="--x:0"><b data-n="100" style="color:var(--moss)">0</b>of hot water heated by the sun</div></div>
+  <div class="col-sm-4"><div class="fig"><b data-n="85" style="color:var(--moss)">0</b>of used water recycled on site</div></div>
+  <div class="col-sm-4"><div class="fig"><b data-n="2400" data-plain style="color:var(--moss)">0</b>native trees planted</div></div>
+ </div><p class="small muted mt-4 mb-0">Sample figures. Replace with the resort's verified numbers.</p></div>
+</div></div></section>
+
+<section class="sec pt-0" id="gallery"><div class="container">
+ <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 gap-3"><h2 class="mb-0">Scenes from the retreat</h2><p class="muted mb-0">A closer look at life among the trees.</p></div>
+ <div class="gallery-grid">
+  <figure><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=88" alt="Forest landscape" loading="lazy"></figure>
+  <figure><img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=900&q=88" alt="Private timber residence" loading="lazy"></figure>
+  <figure><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=88" alt="Farm table dinner" loading="lazy"></figure>
+  <figure><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=700&q=88" alt="Stream-side retreat setting" loading="lazy"></figure>
+  <figure><img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=700&q=88" alt="Clear night sky" loading="lazy"></figure>
+  <figure><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=88" alt="Pool at a private residence" loading="lazy"></figure>
+ </div>
+</div></section>
+
+<section class="sec pt-0" id="offers"><div class="container">
+ <h2 class="mb-5">Reserve directly</h2>
+ <div class="row g-4">
+  <div class="col-md-6"><div class="offer"><h3>Winter retreat</h3><p class="muted">Fifteen percent off the residence rate for three nights between 1 December and 31 January, with late departure until 2 pm.</p><span class="code" data-copy>WINTER15 <button type="button">Copy</button></span></div></div>
+  <div class="col-md-6"><div class="offer"><h3>First stay</h3><p class="muted">Ten percent off your first direct reservation, with a jar of our forest honey waiting on arrival.</p><span class="code" data-copy>FOREST10 <button type="button">Copy</button></span></div></div>
+ </div>
+</div></section>
+
+<section class="sec pt-0"><div class="container">
+ <div id="rev" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="8000"><div class="carousel-inner pb-4">
+  <div class="carousel-item active"><p class="quote">“We switched off our phones on the first evening and forgot to switch them back on.”</p><p class="mt-3 mb-0 muted">Ananya R., Bengaluru</p></div>
+  <div class="carousel-item"><p class="quote">“The best meal of our trip came from a field we could see from the table.”</p><p class="mt-3 mb-0 muted">The Mishra family, Kolkata</p></div>
+  <div class="carousel-item"><p class="quote">“Falling asleep to the stream and waking level with the treetops. We are already booking again.”</p><p class="mt-3 mb-0 muted">Karan and Leela, Hyderabad</p></div></div>
+  <div class="carousel-indicators position-static justify-content-start ms-0 mb-0"><button data-bs-target="#rev" data-bs-slide-to="0" class="active" aria-label="Review 1"></button><button data-bs-target="#rev" data-bs-slide-to="1" aria-label="Review 2"></button><button data-bs-target="#rev" data-bs-slide-to="2" aria-label="Review 3"></button></div></div>
+ <p class="small muted mt-4 mb-0">Sample reviews for design purposes.</p>
+</div></section>
+
+<section class="sec contact rule" id="contact"><div class="container"><div class="row g-5">
+ <div class="col-lg-5"><h2>Plan your stay with us</h2><p class="muted mt-3">For group stays, celebrations or anything not covered here, write to us and we will reply within a day.</p>
+  <p class="mb-0">Walden Wood Eco Retreat<br>Forest Road, Odisha, India<br>+91 00000 00000<br><a href="mailto:stay@waldenwoodsecoretreat.com">stay@waldenwoodsecoretreat.com</a></p></div>
+ <div class="col-lg-6 offset-lg-1"><form id="enq" novalidate><div class="row g-4">
+  <div class="col-sm-6"><input class="form-control" placeholder="Your name" required aria-label="Name"></div><div class="col-sm-6"><input class="form-control" type="tel" placeholder="Phone or WhatsApp" required aria-label="Phone"></div>
+  <div class="col-12"><textarea class="form-control" rows="3" placeholder="Dates, group size and anything special" required aria-label="Message"></textarea></div>
+  <div class="col-12"><button class="btn btn-brass" type="submit">Send enquiry</button></div></div></form></div>
+</div></div></section>
+
+<footer><div class="container d-flex flex-wrap justify-content-between gap-2"><span>&copy; 2026 Walden Wood Eco Retreat</span><span>Website by <a href="https://sonydig.com">Sonydig Technology</a></span></div></footer>
+<a class="btn btn-brass wa" href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp us</a>
+
+<div class="modal fade" id="bm" tabindex="-1" aria-labelledby="bmT" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+ <div class="modal-header border-0 pb-0"><h3 class="modal-title fs-2" id="bmT">Your stay</h3><button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body pb-4" id="bmBody"></div></div></div></div>
+<div class="toast-container position-fixed top-0 end-0 p-3" style="z-index:2000"><div id="toast" class="toast border-0 rounded-0" role="status"><div class="toast-body" id="toastB"></div></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const ROOMS=[
+ {id:'canopy',name:'Canopy House',rate:7800,desc:'A timber residence with a wide deck above the stream. Sleeps up to three.',list:['King bed and stream deck','Breakfast each morning','Outdoor rain shower'],photo:'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1400&q=88'},
+ {id:'brook',name:'Brook Villa',rate:12500,desc:'Two bedrooms, a living room and a private plunge pool beside the water. Sleeps up to five.',list:['Two bedrooms with garden showers','Private plunge pool','Breakfast each morning'],photo:'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1400&q=88'},
+ {id:'loft',name:'The Treetop Loft',rate:16800,desc:'Raised among the canopy with glass on three sides and a soaking tub under the sky. Sleeps two.',list:['Glass walls and canopy views','Soaking tub on the terrace','Dinner at the farm table included'],photo:'https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=1400&q=88'}];
+const COUPONS={WINTER15:.15,FOREST10:.10},TAX=.12;
+const inr=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+$('#rooms').innerHTML=ROOMS.map(r=>`<article class="res"><div class="pic"><img src="${r.photo}" alt="${r.name} at Walden Wood" loading="lazy"><svg class="grain" width="100%" height="100%" aria-hidden="true"><rect width="100%" height="100%" filter="url(#n)"/></svg></div>
+<div class="tx"><h3>${r.name}</h3><p class="muted mb-0">${r.desc}</p><ul>${r.list.map(l=>`<li>${l}</li>`).join('')}</ul><div class="d-flex justify-content-between align-items-center"><span class="from">From <b>${inr(r.rate)}</b> a night</span><button class="lnk" data-room="${r.id}">Reserve</button></div></div></article>`).join('');
+$('#rm').innerHTML=ROOMS.map(r=>`<option value="${r.id}">${r.name}</option>`).join('');
+/* dates */
+const iso=d=>new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const t0=new Date(),d1=new Date(t0);d1.setDate(d1.getDate()+14);const d2=new Date(d1);d2.setDate(d2.getDate()+2);
+$('#ci').min=iso(t0);$('#ci').value=iso(d1);$('#co').value=iso(d2);
+$('#ci').onchange=()=>{const a=new Date($('#ci').value),m=new Date(a);m.setDate(m.getDate()+1);$('#co').min=iso(m);if(new Date($('#co').value)<=a)$('#co').value=iso(m)};$('#ci').onchange();
+const nav=$('#nav');addEventListener('scroll',()=>{nav.classList.toggle('solid',scrollY>60);document.body.classList.toggle('scrolled',scrollY>600)},{passive:true});
+$$('#menu a').forEach(a=>a.onclick=()=>bootstrap.Collapse.getInstance($('#menu'))?.hide());
+const io=new IntersectionObserver((es,o)=>es.forEach(e=>{if(!e.isIntersecting)return;o.unobserve(e.target);const el=e.target,n=+el.dataset.n,pl='plain' in el.dataset;let s=null;
+ const f=ts=>{s??=ts;const p=Math.min((ts-s)/1600,1),v=Math.round(n*(1-Math.pow(1-p,3)));el.textContent=pl?v.toLocaleString('en-IN'):v+'%';if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}),{threshold:.6});
+$$('[data-n]').forEach(el=>io.observe(el));
+/* booking */
+const bm=new bootstrap.Modal('#bm');
+function toast(m,bad){const t=$('#toast');t.className='toast border-0 rounded-0 text-bg-'+(bad?'danger':'success');$('#toastB').textContent=m;bootstrap.Toast.getOrCreateInstance(t).show()}
+function quote(room,a,b,code){let sub=0;const n=Math.round((b-a)/864e5);
+ for(let i=0;i<n;i++){const d=new Date(a);d.setDate(d.getDate()+i);sub+=room.rate*([5,6].includes(d.getDay())?1.2:1)}
+ const pct=COUPONS[code]||0,disc=sub*pct,tax=(sub-disc)*TAX;return{n,sub,pct,disc,tax,total:sub-disc+tax}}
+function openBook(id){
+ const room=ROOMS.find(r=>r.id===(id||$('#rm').value)),a=new Date($('#ci').value),b=new Date($('#co').value),g=$('#gs').value;
+ if(isNaN(a)||isNaN(b)||b<=a){$('#ci').focus();return toast('Choose a departure date after arrival.',1)}
+ $('#rm').value=room.id;let code='';
+ const draw=()=>{const q=quote(room,a,b,code),f=d=>d.toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'});
+  $('#bmBody').innerHTML=`<div class="row g-5"><div class="col-md-6"><p class="mb-1 fs-5 serif">${room.name}</p><p class="muted">${f(a)} to ${f(b)}, ${q.n} night${q.n>1?'s':''}, ${g}</p>
+  <table class="est w-100"><tr><td>Residence (${inr(room.rate)} a night, weekends +20%)</td><td class="text-end">${inr(q.sub)}</td></tr>${q.pct?`<tr><td>Coupon ${code} (${q.pct*100}%)</td><td class="text-end">- ${inr(q.disc)}</td></tr>`:''}
+  <tr><td>Taxes (as configured)</td><td class="text-end">${inr(q.tax)}</td></tr><tr class="t"><td>Total</td><td class="text-end">${inr(q.total)}</td></tr></table>
+  <div class="input-group mt-4"><input class="form-control" id="cp" placeholder="Coupon code" value="${code}" aria-label="Coupon code"><button class="btn btn-ghost" id="ap" type="button">Apply</button></div><div class="small mt-2" id="cm"></div></div>
+  <div class="col-md-6"><form id="gf" novalidate><div class="mb-2"><input class="form-control" placeholder="Full name" required aria-label="Full name"></div><div class="mb-2"><input class="form-control" type="email" placeholder="Email" required aria-label="Email"></div><div class="mb-3"><input class="form-control" type="tel" placeholder="Mobile number" required aria-label="Mobile"></div>
+  <button class="btn btn-brass w-100" type="submit">Request this stay</button><p class="small muted mt-3 mb-0">A payment link follows once we confirm availability. Free cancellation up to 48 hours before arrival.</p></form></div></div>`;
+  $('#ap').onclick=()=>{const c=$('#cp').value.trim().toUpperCase();if(c&&!COUPONS[c]){$('#cm').textContent='That code is not valid. Check the spelling and try again.';$('#cm').className='small mt-2 text-danger';return}code=c;draw()};
+  $('#gf').onsubmit=e=>{e.preventDefault();const f=e.target;f.classList.add('was-validated');if(!f.checkValidity())return;
+   $('#bmBody').innerHTML=`<div class="text-center py-4"><h3 class="fs-1">Request received</h3><p class="mb-1">Reference <strong>WWR-${Math.floor(10000+Math.random()*89999)}</strong></p><p class="muted">We have sent the details to ${f.elements[1].value}. Our team will confirm availability and share the payment link shortly.</p><button class="btn btn-brass" data-bs-dismiss="modal">Done</button></div>`}};
+ draw();bm.show()}
+$('#barForm').onsubmit=e=>{e.preventDefault();openBook()};
+document.addEventListener('click',e=>{const r=e.target.closest('[data-room]'),o=e.target.closest('[data-open-book]'),c=e.target.closest('[data-copy] button');
+ if(r)openBook(r.dataset.room);if(o)openBook();
+ if(c){navigator.clipboard?.writeText(c.parentElement.firstChild.textContent.trim());c.textContent='Copied';setTimeout(()=>c.textContent='Copy',1600)}});
+$('#enq').onsubmit=e=>{e.preventDefault();e.target.classList.add('was-validated');if(!e.target.checkValidity())return toast('Please fill in your name, phone and message.',1);e.target.reset();e.target.classList.remove('was-validated');toast('Thank you. We will reply within a day.')};
+})();
+</script>
+</body>
+</html>
